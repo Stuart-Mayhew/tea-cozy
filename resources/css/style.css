@@ -1,9 +1,8 @@
 /*global rules*/
 html, body {
-  margin: 0 auto;
+  margin: 0;
   background-color: black;
   font-size: 115%;
-  position:
 }
 h2, h3, h4, h5 {
   color: seashell;
@@ -52,6 +51,9 @@ header a {
   background-color: black;
   z-index: 10;
 }
+
+
+
 #mission {
   background: url(../img/img-mission-background.jpg) center center no-repeat;
   background-size: cover;
@@ -69,7 +71,7 @@ header a {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 100px;
+  min-height: 100px;
 }
 
 #featured {
@@ -77,7 +79,6 @@ header a {
   justify-content: center;
   width: 1000px;
   flex-direction: column;
-  flex-wrap: wrap;
   padding-top: 69px;
 }
 
@@ -140,4 +141,23 @@ footer {
 #copy {
   text-align: left;
   margin: 20px 0 0 30px;
+}
+
+@media (max-width:1200px) {
+  #main {
+    display: block;
+    width: 1200px;
+    margin: auto;
+  }
+  #featured {
+    margin: 0 100px;
+  }
+  footer {
+    display: block;
+    width: 1200px;
+    margin: auto;
+  }
+  #contact {
+    margin: 0 110px;
+  }
 }
