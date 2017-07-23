@@ -10,9 +10,6 @@ h2, h3, h4, h5 {
   font-family: helvetica;
   opacity: 0.9;
   }
-body {
-
-}
 /*fixed navbar*/
 header {
   background-color: black;
@@ -41,7 +38,6 @@ header a {
   font-size: 22px;
 }
 
-
 #main {
   position: relative;
   top: 69px;
@@ -51,8 +47,6 @@ header a {
   background-color: black;
   z-index: 10;
 }
-
-
 
 #mission {
   background: url(../img/img-mission-background.jpg) center center no-repeat;
@@ -146,7 +140,7 @@ footer {
 #copy {
   margin: 20px 0 0 30px;
 }
-
+/*fixes misaligned sections on smaller devices*/
 @media (max-width:1200px) {
   #main, footer {
     width: 1200px;
